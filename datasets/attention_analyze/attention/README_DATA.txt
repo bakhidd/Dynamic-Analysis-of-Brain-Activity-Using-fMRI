@@ -1,0 +1,43 @@
+Attention to Visual Motion fMRI data 
+====================================
+
+This dataset was collected by Christian Buchel and is described in the 
+paper.
+
+Buchel, C and K. Friston (1997). Modulation of Connectivity in Visual 
+Pathways by Attention: Cortical Interactions Evaluated with Structural 
+Equation Modelling and fMRI, Cerebral Cortex, December, 7, pp 768-778.
+
+This archive contains the smoothed, spatially normalised, realigned,
+ slice-time corrected images in the directory 'functional'. 
+The directory 'structural' contains a spatially normalised structural image.
+ All processing took place using SPM96. See above paper for further details. 
+
+The archive contains the files:
+
+functional/snffM00640_*.img
+structural/nsM00587_002.*
+factors.mat
+conditions.mat
+corr_look.m
+README_DATA.txt
+README_GLM_PPI.txt
+README_GLM_DCM.txt
+
+The file 'conditions.mat' contains the scan indexes of the experimental
+conditions (fixation, stationary, attentional to visual motion, 
+no attention to visual motion).
+These are used in the analyses described in 
+README_GLM_PPI.txt.
+
+The file 'factors.mat' contains a slightly different labelling of 
+the scans in terms of 
+the experimental 'factors', photic stimulation, motion and attention.
+They are specified in terms on block onsets.
+These are used in the analyses described in 
+README_GLM_DCM.txt.
+
+The script corr_look is used to measure correlations (see 
+README_PPI.txt)
+
+Will Penny, Lee Harrison and Klaas Stephan, September 2003
